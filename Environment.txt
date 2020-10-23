@@ -1,7 +1,7 @@
 python version : 3.7.9
 gpu: rtx 3090
 
-Installed packages in Conda:
+Installed packages in Anaconda:
 # Name                    Version                   Build  Channel
 absl-py                   0.10.0                   pypi_0    pypi
 aiohttp                   3.6.2                    pypi_0    pypi
