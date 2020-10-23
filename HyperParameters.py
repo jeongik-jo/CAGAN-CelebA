@@ -46,7 +46,7 @@ train_data_size = -1 # if -1, use all data
 test_data_size = -1
 is_acgan = False # if false, it's CAGAN
 mixed_batch_training = False
-ratio_per_epoch = 0.025
+ratio_per_epoch = 0.025 # When mixed_batch_training=True, the ratio of real batch and fake batch changes by this value for every epoch.
 use_fcls = False
 
 epochs = 50
