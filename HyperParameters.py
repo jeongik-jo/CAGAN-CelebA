@@ -42,9 +42,9 @@ else:
 discriminator_optimizer = tf.optimizers.Adam(learning_rate=0.00001)
 generator_optimizer = tf.optimizers.Adam(learning_rate=0.00001)
 
-train_data_size = -1
+train_data_size = -1 # if -1, use all data
 test_data_size = -1
-is_acgan = False
+is_acgan = False # if false, it's CAGAN
 mixed_batch_training = False
 ratio_per_epoch = 0.025
 use_fcls = False
@@ -53,7 +53,7 @@ epochs = 50
 
 adversarial_loss_weight = 1.0
 classification_loss_weight = 10.0
-is_wgan = False
+is_wgan = False # if false, it's LSGAN
 gp_loss_weight = 0.1
 #DiscriminatorNormLayer = tfa.layers.InstanceNormalization
 DiscriminatorNormLayer = kr.layers.BatchNormalization
